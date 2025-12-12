@@ -44,7 +44,6 @@ const dashboardRoutes = require('./routes/dashboard');
 const zoneRoutes = require('./routes/zones');
 const tripRoutes = require('./routes/trips');
 
-
 // ============================================================================
 // ROUTES
 // ============================================================================
@@ -62,7 +61,6 @@ app.get('/', (req, res) => {
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/zones', zoneRoutes);
 app.use('/api/trips', tripRoutes);
-
 
 // Test endpoint
 app.get('/api/test', (req, res) => {
